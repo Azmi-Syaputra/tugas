@@ -1,0 +1,25 @@
+print("DAFTAR NAMA BARANG YANG TERTERA DIBAWAH INI")
+print(" ' meja ' ")
+print(" ' kursi' ")
+print(" ' motor ' ")
+print(" ' sepeda ' ")
+print(" ' mobil' ")
+print(" ")
+
+# Kamus sederhana menggunakan dictionary
+kamus = {
+    "meja": "meja ini biasanya sering digunakan alas",
+    "kursi": "kursi ini digunakan untuk duduk",
+    "motor": "motor ini mempunyai  roda tiga",
+    "sepeda": "sepeda untuk olahraga",
+    "mobil": "mobil ini digunakan saat ujan"
+}
+
+# Meminta input dari pengguna
+kata = input("silahkan masukkan jenis barang yang ingin dicari : ").lower()
+
+# Mencari dan menampilkan arti kata
+if kata in kamus:
+    print(f"jenis barang dari '{kata}' adalah: {kamus[kata]}")
+else:
+    print(f"Maaf, nama jenis barang yang dicari '{kata}' tidak ditemukan dalam kamus.")
